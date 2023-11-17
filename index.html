@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nobel Prize Winners</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <nav>
+    <ul class="nav-item-container">
+      <li><a href="#">Winners’ List</a></li>
+      <li><a href="#multiple-winners-section">Multiple Winners</a></li>
+      <!-- <li><a href="#">About</a></li> -->
+    </ul>
+  </nav>
+
+  <main>
+    <h1 id="winners-list">Nobel Prize Winners</h1>
+
+    <div class="filter-section">
+      <div class="filter-el">
+        <label for="category-dropdown">Filter by Category:</label>
+        <select id="category-dropdown"></select>
+      </div>
+
+      <div class="filter-el">
+        <label for="year-dropdown">Filter by Year:</label>
+        <select id="year-dropdown"></select>
+      </div>
+    </div>
+
+    <div class="winner-list-container">
+      <ul id="prize-list">
+      </ul>
+    </div>
+
+    <div id="multiple-winners-section">
+      <h2>Multiple Winners</h2>
+      <ul id="multiple-winners-list">
+      </ul>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

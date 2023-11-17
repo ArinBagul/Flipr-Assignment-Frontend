@@ -1,0 +1,61 @@
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    nav {
+        position: fixed;
+    }
+
+    .nav-item-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .nav-item-container li {
+        margin-bottom: 1rem;
+    }
+
+    main {
+        top: 25vh;
+    }
+
+    #winners-list {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .filter-section {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .filter-el select {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .winner-list-container {
+        padding: 2rem;
+    }
+
+    #prize-list {
+        width: 100%;
+    }
+
+    .prize-heading {
+        font-size: 18px;
+        padding: 0.5rem;
+    }
+
+    .prize-content {
+        padding: 15px 25px;
+    }
+
+    #multiple-winners-section h2 {
+        font-size: 32px;
+    }
+
+    #multiple-winners-list {
+        gap: 5px;
+    }
+}

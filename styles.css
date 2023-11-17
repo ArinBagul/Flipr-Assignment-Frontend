@@ -1,0 +1,235 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+    color: var(--Dark-primary);
+}
+a:visited{
+    color: var(--Dark-primary);
+}
+
+
+/* ***************** CSS styling starts from here ***************** */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+
+
+:root{
+    --white-bg: #F7EEFA;
+    --Purple-primary: #7209B7;
+    --Dark-primary: #2C292E;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: var(--white-bg, #F7EEFA);
+}
+
+/* -------------------------- Navbar -------------------------- */
+
+nav{
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+    background: linear-gradient(180deg, #F7EEFA 44.69%, rgba(247, 238, 250, 0.00) 100%);
+}
+
+.nav-item-container{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    gap: 3rem;
+}
+
+.nav-item-container li a{
+    font-weight: 600;
+    padding: 15px 25px;
+    justify-content: center;
+    align-items: center;
+    color: var(--Dark-primary);
+}
+
+.nav-item-container li a:hover, .nav-item-container li a:focus{
+    
+
+    color: var(--white-bg);
+
+    border-radius: 19px;
+    background: var(----Purple-primary, #7209B7);
+    box-shadow: 0px 8px 30px 0px rgba(114, 9, 183, 0.43), 0px 10px 22px 0px rgba(114, 9, 183, 0.20);
+}
+
+/* -------------------------- main -------------------------- */
+
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 10rem;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------------------- heading -------------------------- */
+#winners-list{
+    color: var(--Purple-primary, #7209B7);
+    font-family: Montserrat;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+/* -------------------------- filter -------------------------- */
+
+.filter-section{
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.filter-el select{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--Dark-primary);
+    border: 1px solid var(--Dark-primary);
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.winner-list-container{
+    display: flex;
+    flex-direction: column;
+    /* background-color: #2C292E; */
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 3rem;
+
+    border-radius: 57px;
+    border: 3px solid var(----Purple-primary, #7209B7);
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 10px 24px 50px 0px rgba(114, 9, 183, 0.10);
+    backdrop-filter: blur(62px);
+}
+
+/* -------------------------- winner list -------------------------- */
+
+#prize-list{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+}
+#prize-list li{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.prize-heading{
+    color: var(--white-bg);
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    padding: 1rem ;
+    border-radius: 15px;
+    border: 2px solid #FFF;
+    background: var(----Purple-primary, #7209B7);
+    box-shadow: 0px 9px 20px 0px rgba(114, 9, 183, 0.25), 0px 3px 8px 0px rgba(114, 9, 183, 0.25);
+}
+
+.prize-content{
+    position: relative;
+    top: -1rem;
+    z-index: -1;
+    border-radius: 19px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(114, 9, 183, 0.25);
+    line-height: 2;
+    padding: 25px 50px;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+/* -------------------------- multiple winners list -------------------------- */
+
+#multiple-winners-section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#multiple-winners-section h2{
+    color: var(--Purple-primary, #7209B7);
+    font-family: Montserrat;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-align: center;
+}
+
+#multiple-winners-list{
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#multiple-winners-list li{
+    list-style-type: decimal;
+}

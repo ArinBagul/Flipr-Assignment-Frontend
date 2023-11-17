@@ -4,7 +4,7 @@
 Explore the Nobel Prize Winners Archive, a web application showcasing laureates from the last century. The site provides details about Nobel Prize recipients, their achievements, and motivations, categorized across various fields.
 
 ## Technologies Used
-- Figma (UI Designing)
+- Figma (UI Designing) : (https://www.figma.com/file/EJ6fszdfQMeicZ74j5Fwg3/FrontEnd-task---Flipr?type=design&node-id=4%3A3&mode=dev)
 - HTML
 - CSS
 - JavaScript
